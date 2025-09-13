@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { X, CreditCard, Shield, Lock, CheckCircle, Truck, AlertCircle, Loader2, Wallet, Check } from 'lucide-react';
 import { Elements, CardElement, useStripe, useElements } from '@stripe/react-stripe-js';
-import { PAYMENT_CONFIG } from '../config/payment';
 import PostPaymentModal from './PostPaymentModal';
 import PayPalButton from './PayPalButton';
 import { sendOrderNotificationEmail } from '../utils/emailService';

@@ -1,9 +1,5 @@
 // Enhanced payment service for client's Stripe account
-import { loadStripe } from '@stripe/stripe-js';
-import { PAYMENT_CONFIG } from '../config/payment';
-
-// Initialize Stripe
-const stripePromise = loadStripe(PAYMENT_CONFIG.stripe.publishableKey);
+import { stripePromise } from './stripeHelpers';
 
 // Use local server for development, fallback to demo mode for production
 const API_BASE_URL = import.meta.env.DEV ? 'http://localhost:3001/api' : null;

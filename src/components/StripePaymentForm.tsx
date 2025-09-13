@@ -6,7 +6,6 @@ import {
   useElements
 } from '@stripe/react-stripe-js';
 import { Lock, CreditCard, CheckCircle, AlertCircle, Loader2, Shield } from 'lucide-react';
-import { PAYMENT_CONFIG } from '../config/payment';
 import { createPaymentIntent, confirmPayment } from '../utils/paymentService';
 import { stripePromise } from '../utils/stripeHelpers';
 
